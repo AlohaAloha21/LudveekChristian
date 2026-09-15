@@ -97,7 +97,7 @@ body {
 
     align-items: center;
 
-    gap: 42px;
+    gap: 50px;
 
     text-align: center;
 }
@@ -119,7 +119,6 @@ body {
 
     transition: color 200ms ease;
 }
-
 .home-links a:hover {
     color: var(--accent);
 }
