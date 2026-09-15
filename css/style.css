@@ -115,15 +115,20 @@ body {
     background: url("../images/background-upload.jpg") center center / cover no-repeat;
 }
 
+
+/* CHRISTIAN L. HOUCH LINK */
+
 .site-title {
     display: block;
 
     color: var(--text);
 
-    font-size: 24px;
+    font-size: 52px;
     font-weight: 400;
 
-    letter-spacing: -0.02em;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+
     text-decoration: none;
 
     margin-bottom: 100px;
@@ -135,21 +140,31 @@ body {
     color: var(--accent);
 }
 
+
+/* FILMOGRAPHY TITLE */
+
 .filmography h1 {
     color: var(--text);
 
     font-size: 42px;
     font-weight: 400;
 
+    line-height: 1.1;
     letter-spacing: -0.02em;
 
     margin-bottom: 140px;
 }
 
+
+/* FILMS */
+
 .film {
     width: 100%;
     margin-bottom: 90px;
 }
+
+
+/* VIDEO */
 
 .video-wrapper {
     width: 100%;
@@ -166,6 +181,9 @@ body {
 
     border: none;
 }
+
+
+/* FILM INFORMATION */
 
 .film-info {
     display: flex;
@@ -230,6 +248,8 @@ footer {
 
 @media (max-width: 700px) {
 
+    /* HOMEPAGE */
+
     .home {
         padding: 50px 15px 30px;
     }
@@ -246,12 +266,15 @@ footer {
         font-size: 18px !important;
     }
 
+
+    /* FILMOGRAPHY */
+
     .filmography {
         padding: 70px 15px 60px;
     }
 
     .site-title {
-        font-size: 20px;
+        font-size: 32px;
         margin-bottom: 70px;
     }
 
@@ -268,6 +291,9 @@ footer {
         font-size: 12px;
         gap: 20px;
     }
+
+
+    /* FOOTER */
 
     .footer-links {
         margin-left: 10px;
