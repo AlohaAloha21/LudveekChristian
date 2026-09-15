@@ -6,6 +6,11 @@
     --accent: #c19a73;
 }
 
+
+/* =========================
+   RESET
+   ========================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,56 +20,74 @@
 html,
 body {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
 }
 
 body {
     background: var(--bg);
     color: var(--text);
+
     font-family: Arial, Helvetica, sans-serif;
+
     text-align: center;
+
+    -webkit-font-smoothing: antialiased;
 }
 
 
-/* HEADER */
+/* =========================
+   HEADER
+   ========================= */
 
 .site-header {
     width: 100%;
-    padding: 28px 20px;
+
+    padding: 42px 20px 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
-    gap: 18px;
+    gap: 22px;
 
     border: none;
 }
 
 .logo {
     color: var(--text);
+
     text-decoration: none;
 
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.12em;
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: 0.14em;
 }
+
+
+/* NAVIGATION */
 
 nav {
     display: flex;
+
     align-items: center;
     justify-content: center;
-    gap: 28px;
+
+    gap: 32px;
 }
 
 nav a {
     color: var(--text-soft);
+
     text-decoration: none;
 
     font-size: 10px;
-    letter-spacing: 0.08em;
+
+    letter-spacing: 0.1em;
+
     text-transform: uppercase;
+
+    transition: color 200ms ease;
 }
 
 nav a:hover {
@@ -72,20 +95,26 @@ nav a:hover {
 }
 
 
-/* HOME */
+/* =========================
+   MAIN
+   ========================= */
 
 .home {
+    position: relative;
+
     width: 100%;
-    min-height: calc(100vh - 100px);
+
+    min-height: calc(100vh - 120px);
 
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
-    justify-content: center;
 
     text-align: center;
 
-    padding: 60px 20px;
+    padding: 70px 20px 90px;
 
     background-image:
         linear-gradient(
@@ -95,145 +124,160 @@ nav a:hover {
         url("../images/background-texture.png");
 
     background-size: cover;
+
     background-position: center;
 }
 
 
-/* INTRO */
+/* =========================
+   TITLE
+   ========================= */
 
 .home-intro {
     width: 100%;
 
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
-    justify-content: center;
 
     text-align: center;
 }
 
 .eyebrow {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
     color: var(--text-soft);
 
     font-size: 9px;
+
     letter-spacing: 0.16em;
+
     text-transform: uppercase;
 }
 
 .home-intro h1 {
     color: var(--text);
 
-    font-size: clamp(32px, 5vw, 58px);
+    font-size: clamp(32px, 5vw, 56px);
+
     font-weight: 400;
+
     line-height: 1.1;
+
     letter-spacing: -0.03em;
 
     text-align: center;
 }
 
-.intro-copy {
-    max-width: 380px;
 
-    margin-top: 22px;
-
-    color: var(--text-soft);
-
-    font-size: 11px;
-    line-height: 1.7;
-
-    text-align: center;
-}
-
-
-/* LINKS */
+/* =========================
+   CATEGORIES
+   ========================= */
 
 .home-links {
     width: 100%;
-    max-width: 500px;
-
-    margin-top: 55px;
 
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
+    justify-content: center;
+
+    gap: 34px;
+
+    margin-top: auto;
+
+    margin-bottom: auto;
 
     text-align: center;
 }
 
 .home-link {
-    width: 100%;
+    display: block;
 
-    padding: 16px 0;
+    width: auto;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 5px 20px;
 
-    gap: 6px;
+    color: var(--text);
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+    letter-spacing: 0.03em;
 
     text-decoration: none;
 
     border: none !important;
 
-    color: var(--text);
-}
-
-.link-number {
-    color: var(--text-muted);
-
-    font-size: 8px;
-    letter-spacing: 0.12em;
-}
-
-.link-title {
-    color: var(--text);
-
-    font-size: 14px;
-    letter-spacing: 0.02em;
-
     text-align: center;
+
+    transition:
+        color 200ms ease,
+        transform 200ms ease;
 }
 
-.home-link:hover .link-title {
+.home-link:hover {
     color: var(--accent);
+
+    transform: translateY(-2px);
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+   ========================= */
 
 footer {
     width: 100%;
 
-    margin: 0;
-    padding: 20px;
-
-    border: none !important;
+    padding: 0 20px 25px;
 
     color: var(--text-muted);
 
     font-size: 9px;
 
+    letter-spacing: 0.04em;
+
     text-align: center;
+
+    border: none !important;
 }
 
 
-/* MOBILE */
+/* =========================
+   MOBILE
+   ========================= */
 
 @media (max-width: 700px) {
 
     .site-header {
-        padding: 22px 15px;
+        padding-top: 30px;
+
+        gap: 18px;
+    }
+
+    .logo {
+        font-size: 12px;
     }
 
     nav {
-        gap: 16px;
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 9px;
     }
 
     .home {
-        padding: 50px 15px;
+        min-height: calc(100vh - 105px);
+
+        padding: 55px 15px 70px;
     }
 
     .home-intro h1 {
@@ -241,6 +285,14 @@ footer {
     }
 
     .home-links {
-        margin-top: 40px;
+        gap: 28px;
+    }
+
+    .home-link {
+        font-size: 14px;
+    }
+
+    footer {
+        padding-bottom: 20px;
     }
 }
