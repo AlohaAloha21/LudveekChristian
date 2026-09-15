@@ -117,10 +117,10 @@ nav a:focus-visible {
 
     background-image:
         linear-gradient(
-            rgba(31, 27, 24, 0.38),
-            rgba(31, 27, 24, 0.56)
+            rgba(31, 27, 24, 0.25),
+            rgba(31, 27, 24, 0.25)
         ),
-        url("../images/hero-autumn.jpg");
+        url("../images/background-texture.png");
 
     background-size: cover;
     background-position: center;
