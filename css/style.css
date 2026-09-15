@@ -1,6 +1,6 @@
 /* =========================================================
-   CHRISTIAN L. HOUCH — AUTUMN / DESERT TWILIGHT
-   Minimal cinematic theme
+   CHRISTIAN L. HOUCH
+   Autumn / Desert Twilight
    ========================================================= */
 
 :root {
@@ -43,6 +43,8 @@ body {
     min-height: 100vh;
 
     -webkit-font-smoothing: antialiased;
+
+    text-align: center;
 }
 
 a {
@@ -55,16 +57,18 @@ a {
    ========================= */
 
 .site-header {
-    width: min(92%, 1280px);
+    width: 92%;
+    max-width: 1280px;
+
     margin: 0 auto;
 
     padding: 26px 0;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 
-    border-bottom: 1px solid var(--border);
+    gap: 18px;
 }
 
 .logo {
@@ -79,6 +83,7 @@ a {
 
 nav {
     display: flex;
+    justify-content: center;
     gap: 25px;
 }
 
@@ -124,6 +129,10 @@ nav a:focus-visible {
 
     background-size: cover;
     background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -132,18 +141,20 @@ nav a:focus-visible {
    ========================= */
 
 .home-with-hero .home-intro {
-    width: min(92%, 1280px);
+    width: 92%;
+    max-width: 1280px;
 
-    margin: 0 auto;
+    min-height: 60vh;
 
-    min-height: 72vh;
-
-    padding: 80px 0 70px;
+    padding: 80px 0 50px;
 
     display: flex;
     flex-direction: column;
 
+    align-items: center;
     justify-content: center;
+
+    text-align: center;
 }
 
 .eyebrow {
@@ -159,11 +170,11 @@ nav a:focus-visible {
 }
 
 .home-intro h1 {
-    max-width: 620px;
+    max-width: 800px;
 
     color: var(--text);
 
-    font-size: clamp(27px, 4vw, 48px);
+    font-size: clamp(28px, 5vw, 56px);
 
     line-height: 1.08;
 
@@ -173,7 +184,7 @@ nav a:focus-visible {
 }
 
 .intro-copy {
-    max-width: 330px;
+    max-width: 400px;
 
     margin-top: 24px;
 
@@ -190,11 +201,12 @@ nav a:focus-visible {
    ========================= */
 
 .home-with-hero .home-links {
-    width: min(92%, 1280px);
+    width: 92%;
+    max-width: 700px;
 
     margin: 0 auto;
 
-    border-top: 1px solid rgba(233, 223, 210, 0.20);
+    border-top: none;
 }
 
 .home-link {
@@ -202,27 +214,29 @@ nav a:focus-visible {
 
     display: grid;
 
-    grid-template-columns: 55px 1fr auto;
+    grid-template-columns: 1fr;
 
     align-items: center;
 
-    gap: 18px;
+    gap: 8px;
 
-    padding: 0 4px;
+    padding: 12px 0;
 
-    border-bottom: 1px solid rgba(233, 223, 210, 0.20);
+    border-bottom: none;
 
     color: var(--text);
 
     text-decoration: none;
 
+    text-align: center;
+
     transition:
-        padding 220ms ease,
-        color 220ms ease;
+        color 220ms ease,
+        transform 220ms ease;
 }
 
 .link-number {
-    color: rgba(233, 223, 210, 0.56);
+    color: rgba(233, 223, 210, 0.45);
 
     font-size: 9px;
 
@@ -236,9 +250,9 @@ nav a:focus-visible {
 }
 
 .link-arrow {
-    color: rgba(233, 223, 210, 0.56);
+    color: rgba(233, 223, 210, 0.45);
 
-    font-size: 14px;
+    font-size: 13px;
 
     transition:
         transform 220ms ease,
@@ -247,16 +261,16 @@ nav a:focus-visible {
 
 .home-link:hover,
 .home-link:focus-visible {
-    padding-left: 10px;
-
     color: var(--accent-hover);
+
+    transform: translateY(-2px);
 }
 
 .home-link:hover .link-arrow,
 .home-link:focus-visible .link-arrow {
     color: var(--accent-hover);
 
-    transform: translate(3px, -3px);
+    transform: translateY(-2px);
 }
 
 
@@ -265,19 +279,22 @@ nav a:focus-visible {
    ========================= */
 
 footer {
-    width: min(92%, 1280px);
+    width: 92%;
+    max-width: 1280px;
 
-    margin: 100px auto 28px;
+    margin: 80px auto 28px;
 
-    padding-top: 18px;
+    padding-top: 0;
 
-    border-top: 1px solid var(--border);
+    border-top: none;
 
     color: var(--text-muted);
 
     font-size: 9px;
 
     letter-spacing: 0.04em;
+
+    text-align: center;
 }
 
 
@@ -288,9 +305,7 @@ footer {
 @media (max-width: 700px) {
 
     .site-header {
-        align-items: flex-start;
-
-        gap: 18px;
+        gap: 16px;
     }
 
     nav {
@@ -298,19 +313,17 @@ footer {
 
         flex-wrap: wrap;
 
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .home-with-hero {
         min-height: calc(100vh - 90px);
-
-        background-position: 58% center;
     }
 
     .home-with-hero .home-intro {
-        min-height: 62vh;
+        min-height: 58vh;
 
-        padding: 70px 0 80px;
+        padding: 60px 0 50px;
     }
 
     .home-intro h1 {
@@ -324,9 +337,7 @@ footer {
     }
 
     .home-link {
-        min-height: 68px;
-
-        grid-template-columns: 35px 1fr auto;
+        min-height: 65px;
     }
 
     .link-title {
@@ -334,6 +345,6 @@ footer {
     }
 
     footer {
-        margin-top: 80px;
+        margin-top: 60px;
     }
 }
