@@ -160,7 +160,8 @@ body {
 
 .film {
     width: 100%;
-    margin-bottom: 90px;
+    max-width: 900px;
+    margin: 0 auto 90px;
 }
 
 
