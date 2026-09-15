@@ -1,10 +1,27 @@
+/* =========================================================
+   CHRISTIAN L. HOUCH — AUTUMN / DESERT TWILIGHT
+   Minimal cinematic theme
+   ========================================================= */
+
 :root {
-    --brown: #F0DBC5;
-    --cream: #3E484A;
-    --blue: #366170;
-    --taupe: #B09980;
-    --light-blue: #A0BBC5;
+    --bg: #1f1b18;
+    --surface: #2a2420;
+    --elevated: #332b26;
+
+    --text: #e9dfd2;
+    --text-soft: #b8aaa0;
+    --text-muted: #81756d;
+
+    --accent: #a67c52;
+    --accent-hover: #c19a73;
+
+    --border: #443a34;
 }
+
+
+/* =========================
+   RESET
+   ========================= */
 
 * {
     box-sizing: border-box;
@@ -17,257 +34,306 @@ html {
 }
 
 body {
-    background: var(--cream);
-    color: var(--brown);
+    background: var(--bg);
+    color: var(--text);
+
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
     min-height: 100vh;
+
+    -webkit-font-smoothing: antialiased;
 }
 
-/* HEADER */
+a {
+    color: inherit;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
 
 .site-header {
+    width: min(92%, 1280px);
+    margin: 0 auto;
+
+    padding: 26px 0;
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
-    padding: 30px 5vw;
-
-    border-bottom: 1px solid var(--taupe);
+    border-bottom: 1px solid var(--border);
 }
 
 .logo {
-    color: var(--brown);
+    color: var(--text);
     text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
+
+    font-size: 11px;
+    font-weight: 600;
+
     letter-spacing: 0.12em;
 }
 
 nav {
     display: flex;
-    gap: 28px;
+    gap: 25px;
 }
 
 nav a {
-    color: var(--brown);
+    color: var(--text-soft);
     text-decoration: none;
-    font-size: 12px;
+
+    font-size: 10px;
     letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    transition: color 180ms ease;
 }
 
-nav a:hover {
-    color: var(--blue);
+nav a:hover,
+nav a:focus-visible {
+    color: var(--text);
 }
 
-/* HOME */
 
-.home {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+/* =========================
+   HOME
+   ========================= */
+
+.home-with-hero {
+    position: relative;
+
+    width: 100%;
+    max-width: none;
+
+    min-height: calc(100vh - 64px);
+
+    overflow: hidden;
+
+    background-color: var(--bg);
+
+    background-image:
+        linear-gradient(
+            rgba(31, 27, 24, 0.38),
+            rgba(31, 27, 24, 0.56)
+        ),
+        url("../images/hero-autumn.jpg");
+
+    background-size: cover;
+    background-position: center;
 }
 
-.home-intro {
-    padding: 18vh 0 15vh;
+
+/* =========================
+   INTRO
+   ========================= */
+
+.home-with-hero .home-intro {
+    width: min(92%, 1280px);
+
+    margin: 0 auto;
+
+    min-height: 72vh;
+
+    padding: 80px 0 70px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.eyebrow {
+    margin-bottom: 22px;
+
+    color: rgba(233, 223, 210, 0.68);
+
+    font-size: 9px;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
 }
 
 .home-intro h1 {
-    font-size: clamp(40px, 8vw, 100px);
+    max-width: 620px;
+
+    color: var(--text);
+
+    font-size: clamp(27px, 4vw, 48px);
+
+    line-height: 1.08;
+
     font-weight: 400;
-    letter-spacing: -0.04em;
+
+    letter-spacing: -0.035em;
 }
 
-.home-intro p {
-    margin-top: 20px;
-    color: var(--blue);
-    font-size: 13px;
-    letter-spacing: 0.15em;
+.intro-copy {
+    max-width: 330px;
+
+    margin-top: 24px;
+
+    color: rgba(233, 223, 210, 0.72);
+
+    font-size: 11px;
+
+    line-height: 1.7;
 }
 
-.home-links {
-    border-top: 1px solid var(--taupe);
+
+/* =========================
+   HOME LINKS
+   ========================= */
+
+.home-with-hero .home-links {
+    width: min(92%, 1280px);
+
+    margin: 0 auto;
+
+    border-top: 1px solid rgba(233, 223, 210, 0.20);
 }
 
 .home-link {
+    min-height: 76px;
+
     display: grid;
-    grid-template-columns: 80px 1fr;
+
+    grid-template-columns: 55px 1fr auto;
+
     align-items: center;
 
-    padding: 35px 10px;
+    gap: 18px;
 
-    border-bottom: 1px solid var(--taupe);
+    padding: 0 4px;
 
-    color: var(--brown);
-    text-decoration: none;
-}
+    border-bottom: 1px solid rgba(233, 223, 210, 0.20);
 
-.home-link span {
-    color: var(--blue);
-    font-size: 12px;
-}
+    color: var(--text);
 
-.home-link h2 {
-    font-size: clamp(28px, 5vw, 65px);
-    font-weight: 400;
-}
-
-.home-link:hover {
-    background: var(--light-blue);
-    color: var(--brown);
-}
-
-/* PAGE */
-
-.page {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 100px 0;
-}
-
-.page-title {
-    font-size: clamp(45px, 8vw, 100px);
-    font-weight: 400;
-    margin-bottom: 80px;
-}
-
-/* FILMOGRAPHY */
-
-.film {
-    border-top: 1px solid var(--taupe);
-    padding: 50px 0;
-}
-
-.video {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border: none;
-    background: var(--light-blue);
-}
-
-.film-info {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 18px;
-}
-
-.film-title {
-    font-size: 20px;
-}
-
-.film-year {
-    color: var(--blue);
-}
-
-/* PHOTOGRAPHY */
-
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-}
-
-.photo {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    display: block;
-    cursor: pointer;
-    background: var(--light-blue);
-}
-
-.photo:hover {
-    opacity: 0.8;
-}
-
-/* WRITING */
-
-.writing-list {
-    border-top: 1px solid var(--taupe);
-}
-
-.writing-link {
-    display: block;
-
-    padding: 35px 10px;
-
-    border-bottom: 1px solid var(--taupe);
-
-    color: var(--brown);
     text-decoration: none;
 
-    font-size: clamp(24px, 4vw, 45px);
+    transition:
+        padding 220ms ease,
+        color 220ms ease;
 }
 
-.writing-link:hover {
-    background: var(--light-blue);
+.link-number {
+    color: rgba(233, 223, 210, 0.56);
+
+    font-size: 9px;
+
+    letter-spacing: 0.08em;
 }
 
-/* ARTICLE */
+.link-title {
+    font-size: 14px;
 
-.article {
-    max-width: 750px;
-    margin: auto;
+    letter-spacing: 0.01em;
 }
 
-.article h1 {
-    font-size: clamp(40px, 7vw, 80px);
-    font-weight: 400;
-    margin-bottom: 70px;
+.link-arrow {
+    color: rgba(233, 223, 210, 0.56);
+
+    font-size: 14px;
+
+    transition:
+        transform 220ms ease,
+        color 220ms ease;
 }
 
-.article-text {
-    font-family: Georgia, serif;
-    font-size: 19px;
-    line-height: 1.8;
-    white-space: pre-line;
+.home-link:hover,
+.home-link:focus-visible {
+    padding-left: 10px;
+
+    color: var(--accent-hover);
 }
 
-.article-text p {
-    margin-bottom: 30px;
+.home-link:hover .link-arrow,
+.home-link:focus-visible .link-arrow {
+    color: var(--accent-hover);
+
+    transform: translate(3px, -3px);
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+   ========================= */
 
 footer {
-    width: 90%;
-    max-width: 1200px;
-    margin: 100px auto 30px;
+    width: min(92%, 1280px);
 
-    padding-top: 20px;
+    margin: 100px auto 28px;
 
-    border-top: 1px solid var(--taupe);
+    padding-top: 18px;
 
-    color: var(--blue);
-    font-size: 11px;
+    border-top: 1px solid var(--border);
+
+    color: var(--text-muted);
+
+    font-size: 9px;
+
+    letter-spacing: 0.04em;
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+   ========================= */
 
 @media (max-width: 700px) {
 
     .site-header {
-        flex-direction: column;
         align-items: flex-start;
-        gap: 20px;
+
+        gap: 18px;
     }
 
     nav {
-        gap: 15px;
+        gap: 14px;
+
         flex-wrap: wrap;
+
+        justify-content: flex-end;
     }
 
-    .home-intro {
-        padding: 100px 0;
+    .home-with-hero {
+        min-height: calc(100vh - 90px);
+
+        background-position: 58% center;
     }
 
-    .photo-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .home-with-hero .home-intro {
+        min-height: 62vh;
+
+        padding: 70px 0 80px;
     }
 
-    .film-info {
-        flex-direction: column;
-        gap: 8px;
+    .home-intro h1 {
+        font-size: 28px;
     }
 
+    .intro-copy {
+        font-size: 10px;
+
+        max-width: 280px;
+    }
+
+    .home-link {
+        min-height: 68px;
+
+        grid-template-columns: 35px 1fr auto;
+    }
+
+    .link-title {
+        font-size: 13px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
 }
