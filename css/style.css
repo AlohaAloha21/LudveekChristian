@@ -51,7 +51,7 @@ body {
             rgba(31, 27, 24, 0.25),
             rgba(31, 27, 24, 0.25)
         ),
-        url("../images/background-texture.png");
+        url("../images/background.jpg");
 
     background-size: cover;
     background-position: center;
