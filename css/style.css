@@ -15,6 +15,8 @@
 html {
     width: 100%;
     min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body {
@@ -29,16 +31,19 @@ body {
 
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-}
 
-body:has(.home) {
-    background: url("../images/background-upload.jpg") center center / cover fixed no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 
 /* =========================
    HOMEPAGE
    ========================= */
+
+body:has(.home) {
+    background: url("../images/background-upload.jpg") center center / cover fixed no-repeat;
+}
 
 .home {
     flex: 1;
@@ -111,6 +116,7 @@ body:has(.home) {
 .filmography {
     flex: 1;
     width: 100%;
+    min-height: 100vh;
     max-width: none;
 
     margin: 0 auto;
@@ -166,6 +172,7 @@ body:has(.home) {
 .film {
     width: 100%;
     max-width: 900px;
+
     margin: 0 auto 90px;
 }
 
@@ -227,6 +234,8 @@ footer {
     text-align: center;
 
     border: none !important;
+
+    background: transparent;
 }
 
 .footer-links {
@@ -257,6 +266,8 @@ footer {
     /* HOMEPAGE */
 
     .home {
+        min-height: 110vh;
+
         padding: 50px 15px 30px;
     }
 
@@ -276,6 +287,8 @@ footer {
     /* FILMOGRAPHY */
 
     .filmography {
+        min-height: 100vh;
+
         padding: 70px 15px 60px;
     }
 
