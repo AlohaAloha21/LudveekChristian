@@ -127,7 +127,27 @@ body:has(.home) {
 }
 
 
-/* CHRISTIAN L. HOUCH LINK */
+/* =========================
+   PHOTOGRAPHY
+   ========================= */
+
+.photography {
+    flex: 1;
+    width: 100%;
+    min-height: 100vh;
+    max-width: none;
+
+    margin: 0 auto;
+
+    padding: 140px 30px 100px;
+
+    background: #1c1c1c;
+}
+
+
+/* =========================
+   CHRISTIAN L. HOUCH LINK
+   ========================= */
 
 .site-title {
     display: block;
@@ -152,9 +172,12 @@ body:has(.home) {
 }
 
 
-/* FILMOGRAPHY TITLE */
+/* =========================
+   PAGE TITLES
+   ========================= */
 
-.filmography h1 {
+.filmography h1,
+.photography h1 {
     color: var(--text);
 
     font-size: 42px;
@@ -167,7 +190,9 @@ body:has(.home) {
 }
 
 
-/* FILMS */
+/* =========================
+   FILMS
+   ========================= */
 
 .film {
     width: 100%;
@@ -177,7 +202,9 @@ body:has(.home) {
 }
 
 
-/* VIDEO */
+/* =========================
+   VIDEO
+   ========================= */
 
 .video-wrapper {
     width: 100%;
@@ -196,7 +223,9 @@ body:has(.home) {
 }
 
 
-/* FILM INFORMATION */
+/* =========================
+   FILM INFORMATION
+   ========================= */
 
 .film-info {
     display: flex;
@@ -213,6 +242,36 @@ body:has(.home) {
 
 .film-info span:last-child {
     color: var(--text-muted);
+}
+
+
+/* =========================
+   PHOTOGRAPHY GRID
+   ========================= */
+
+.photo-grid {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 100px;
+}
+
+
+/* =========================
+   PHOTOGRAPHS
+   ========================= */
+
+.photo {
+    display: block;
+
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+
+    margin: 0 auto;
 }
 
 
@@ -292,15 +351,31 @@ footer {
         padding: 70px 15px 60px;
     }
 
+
+    /* PHOTOGRAPHY */
+
+    .photography {
+        min-height: 100vh;
+
+        padding: 70px 15px 60px;
+    }
+
+
+    /* PAGE TITLE */
+
     .site-title {
         font-size: 32px;
         margin-bottom: 70px;
     }
 
-    .filmography h1 {
+    .filmography h1,
+    .photography h1 {
         font-size: 32px;
         margin-bottom: 80px;
     }
+
+
+    /* FILMS */
 
     .film {
         margin-bottom: 60px;
@@ -309,6 +384,18 @@ footer {
     .film-info {
         font-size: 12px;
         gap: 20px;
+    }
+
+
+    /* PHOTOGRAPHS */
+
+    .photo-grid {
+        gap: 60px;
+    }
+
+    .photo {
+        width: 100%;
+        max-width: 900px;
     }
 
 
