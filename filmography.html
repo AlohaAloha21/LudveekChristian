@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +19,7 @@
 
         <h1>Filmography</h1>
 
+        <!-- Film 1 -->
         <section class="film">
             <div class="video-wrapper">
                 <iframe
@@ -33,6 +35,8 @@
             </div>
         </section>
 
+
+        <!-- Film 2 -->
         <section class="film">
             <div class="video-wrapper">
                 <iframe
@@ -44,19 +48,63 @@
 
             <div class="film-info">
                 <span>How to (not) live a legacy?</span>
+                <span>2024</span>
             </div>
         </section>
 
-          <section class="film">
+
+        <!-- Film 3 -->
+        <section class="film">
             <div class="video-wrapper">
                 <iframe
                     src="https://www.youtube.com/watch?v=oGQre1TUEn0"
-                    title="How to (not) live a legacy?"
+                    title="Film 3"
                     allowfullscreen>
                 </iframe>
             </div>
-    
+
+            <div class="film-info">
+                <span>Film 3</span>
+                <span>2026</span>
+            </div>
+        </section>
+
+
+        <!-- Film 4 - ADD YOUR VIDEO -->
+        <section class="film">
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/watch?v=oGQre1TUEn0"
+                    title="Film 4"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="film-info">
+                <span>Film 4</span>
+                <span>2026</span>
+            </div>
+        </section>
+
+
+        <!-- Film 5 - ADD YOUR VIDEO -->
+        <section class="film">
+            <div class="video-wrapper">
+                <iframe
+                    src="YOUR_VIDEO_LINK_HERE"
+                    title="Film 5"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="film-info">
+                <span>Film 5</span>
+                <span>2026</span>
+            </div>
+        </section>
+
     </main>
+
 
     <footer>
         © 2026 Christian L. Houch
@@ -71,3 +119,39 @@
 </body>
 
 </html>
+```
+
+### When adding the two new videos
+
+If they're **YouTube**, use:
+
+```html
+src="https://www.youtube.com/embed/VIDEO_ID"
+```
+
+So if your normal YouTube link is:
+
+```text
+https://www.youtube.com/watch?v=ABC123
+```
+
+you put:
+
+```html
+src="https://www.youtube.com/embed/ABC123"
+```
+
+For **Vimeo**, use:
+
+```html
+src="https://player.vimeo.com/video/VIDEO_ID"
+```
+
+You can also change the names and years directly:
+
+```html
+<span>My New Film</span>
+<span>2026</span>
+```
+
+The important bit is that **the iframe needs the embed URL, not the normal YouTube/Vimeo webpage URL**.
