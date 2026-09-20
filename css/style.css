@@ -12,7 +12,7 @@
 
 .lilita-one-regular {
     font-family: "Lilita One", sans-serif;
-    font-weight: 400;
+    font-weight: 350;
     font-style: normal;
 }
 
@@ -55,7 +55,7 @@ body {
     background: var(--bg);
     color: var(--text);
 
-    font-family: "Bowlby One", Arial, Helvetica, sans-serif;
+    font-family: "Lilita One", Arial, Helvetica, sans-serif;
     text-align: center;
 
     overflow-x: hidden;
