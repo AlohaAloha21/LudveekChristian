@@ -25,6 +25,16 @@
   font-style: normal;
 }
 
+/* =========================
+  Concerto FONT
+   ========================= */
+.concert-one-regular {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 * {
     box-sizing: border-box;
