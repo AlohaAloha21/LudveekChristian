@@ -137,9 +137,9 @@ body:has(.home) {
 
     margin: 0 auto;
 
-    padding: 140px 30px 180px;
+    padding: 140px 30px 150px;
 
-    background: url("../images/Photo 3 Watermarked.jpg") 35% center / cover no-repeat;
+    background: url("../images/Photo 3 Watermarked.jpg") calc(50% - 100px) / cover no-repeat;
 }
 
 
