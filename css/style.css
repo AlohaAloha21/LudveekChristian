@@ -22,6 +22,16 @@
   font-style: normal;
 }
 
+/* =========================
+   Bowlby one ONE FONT
+   ========================= */
+.bowlby-one-regular {
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -45,7 +55,7 @@ body {
     background: var(--bg);
     color: var(--text);
 
-    font-family: "Lilita One", Arial, Helvetica, sans-serif;
+    font-family: "Bowlby One", Arial, Helvetica, sans-serif;
     text-align: center;
 
     overflow-x: hidden;
