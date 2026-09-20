@@ -139,7 +139,11 @@ body:has(.home) {
 
     padding: 140px 30px 150px;
 
-    background: url("../images/Photo 3 Watermarked.jpg") calc(50% - 100px) / cover no-repeat;
+
+    background-image: url("../images/Photo 3 Watermarked.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% center;
 }
 
 
