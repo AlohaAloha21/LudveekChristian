@@ -152,14 +152,12 @@ body:has(.page) {
    ========================= */
 
 body:has(.filmography) {
-    background-image: url("../images/Photo 3 Watermarked.jpg");
-    background-size: cover;
+    background-image: url("../images/Photo 2 Watermarked.jpg");
+    background-size: 120%;
     background-repeat: no-repeat;
-
-    /* CHANGE THESE TO MOVE THE IMAGE */
-    background-position: 20% center;
-
+    background-position: 60% 70%;
     background-attachment: fixed;
+    
 }
 
 .filmography {
