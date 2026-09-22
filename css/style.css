@@ -130,9 +130,7 @@ body:has(.home) {
     color: var(--accent);
 }
 
-/* =========================
-   Writing PAGE
-   ========================= */
+
 /* =========================
    WRITING PAGE
    ========================= */
@@ -168,6 +166,7 @@ body:has(.page) {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% center;
+    background-attachment: fixed;
 }
 
 
