@@ -151,6 +151,17 @@ body:has(.page) {
    FILMOGRAPHY
    ========================= */
 
+body:has(.filmography) {
+    background-image: url("../images/Photo 3 Watermarked.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* CHANGE THESE TO MOVE THE IMAGE */
+    background-position: 20% center;
+
+    background-attachment: fixed;
+}
+
 .filmography {
     flex: 1;
     width: 100%;
@@ -158,15 +169,9 @@ body:has(.page) {
     max-width: none;
 
     margin: 0 auto;
-
     padding: 140px 30px 110px;
 
-
-    background-image: url("../images/Photo 3 Watermarked.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0% center;
-    background-attachment: fixed;
+    background: transparent;
 }
 
 
