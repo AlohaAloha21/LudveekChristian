@@ -153,7 +153,7 @@ body:has(.page) {
 
 body:has(.filmography) {
     background-image: url("../images/Photo 3 Watermarked.jpg");
-    background-size: 100vw auto;
+    background-size: 120vw auto;
     background-repeat: no-repeat;
     background-position: 80% 90%;
     background-attachment: fixed;
