@@ -144,6 +144,7 @@ body:has(.home) {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% center;
+    background-attachment: fixed;
 }
     
 /* =========================
