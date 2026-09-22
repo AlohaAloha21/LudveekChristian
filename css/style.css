@@ -359,6 +359,28 @@ body:has(.filmography) {
 }
 
 /* =========================
+   WRITING TEXT
+   ========================= */
+
+.writing-text {
+    width: 100%;
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: var(--text);
+
+    font-size: 18px;
+    line-height: 1.6;
+
+    text-align: left;
+}
+
+.writing-text p {
+    margin-bottom: 30px;
+}
+
+/* =========================
    FOOTER
    ========================= */
 
