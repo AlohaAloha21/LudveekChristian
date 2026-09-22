@@ -130,7 +130,19 @@ body:has(.home) {
     color: var(--accent);
 }
 
+/* =========================
+   GENERAL PAGE
+   ========================= */
+.page {
+    flex: 1;
+    width: 100%;
+    min-height: 100vh;
 
+    padding: 140px 30px 110px;
+
+    background: #303030;
+}
+    
 /* =========================
    FILMOGRAPHY
    ========================= */
@@ -203,7 +215,8 @@ body:has(.home) {
    ========================= */
 
 .filmography h1,
-.photography h1 {
+.photography h1,
+.page-title {
     color: var(--text);
 
     font-size: 42px;
@@ -300,6 +313,42 @@ body:has(.home) {
     margin: 0 auto;
 }
 
+/* =========================
+   WRITINGS
+   ========================= */
+
+.writing-list {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    border-top: 1px solid var(--text-muted);
+}
+
+.writing-link {
+    display: block;
+
+    width: 100%;
+
+    padding: 28px 10px;
+
+    color: var(--text);
+
+    font-size: 22px;
+    font-weight: 400;
+
+    text-align: center;
+    text-decoration: none;
+
+    border-bottom: 1px solid var(--text-muted);
+
+    transition: color 200ms ease;
+}
+
+.writing-link:hover {
+    color: var(--accent);
+}
 
 /* =========================
    FOOTER
@@ -396,9 +445,19 @@ footer {
     }
 
     .filmography h1,
-    .photography h1 {
+    .photography h1,
+    .page-title {
         font-size: 32px;
         margin-bottom: 80px;
+    }
+
+    .page {
+    padding: 70px 15px 60px;
+    }
+
+    .writing-link {
+    padding: 22px 5px;
+    font-size: 18px;
     }
 
 
