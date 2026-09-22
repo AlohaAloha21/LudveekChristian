@@ -133,18 +133,22 @@ body:has(.home) {
 /* =========================
    Writing PAGE
    ========================= */
-.page {
+body:has(.home) {
+    background: url("../images/Photo 2 Watermarked.jpg") center center / cover fixed no-repeat;
+}
+
+.home {
     flex: 1;
     width: 100%;
-    min-height: 100vh;
+    min-height: 110vh;
 
-    padding: 140px 30px 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    background-image: url("../images/Photo 2 Watermarked.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0% center;
-    background-attachment: fixed;
+    padding: 70px 20px 40px;
+
+    background: transparent;
 }
     
 /* =========================
