@@ -131,7 +131,7 @@ body:has(.home) {
 }
 
 /* =========================
-   GENERAL PAGE
+   Writing PAGE
    ========================= */
 .page {
     flex: 1;
@@ -140,7 +140,10 @@ body:has(.home) {
 
     padding: 140px 30px 110px;
 
-    background: #303030;
+    background-image: url("../images/Photo 2 Watermarked.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% center;
 }
     
 /* =========================
