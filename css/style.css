@@ -26,8 +26,10 @@
   font-style: normal;
 }
 
-
-
+.arabic {
+    font-family: "Noto Naskh Arabic", serif;
+    direction: rtl;
+}
 * {
     box-sizing: border-box;
     margin: 0;
