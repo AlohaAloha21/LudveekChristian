@@ -393,9 +393,9 @@ footer {
     margin-top: 40px;
     padding: 20px 20px 25px;
 
-    color: #64D785;
+    color: #422424;
 
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 0.04em;
 
     text-align: center;
@@ -410,7 +410,7 @@ footer {
 }
 
 .footer-links a {
-    color: #64D785;
+    color: #422424;
 
     text-decoration: none;
 
@@ -420,7 +420,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #64D785;
+    color: #422424;
 }
 
 
