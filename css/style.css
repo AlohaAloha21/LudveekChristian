@@ -393,7 +393,7 @@ footer {
     margin-top: 40px;
     padding: 20px 20px 25px;
 
-    color: #244226;
+    color: #D7D264;
 
     font-size: 18px;
     letter-spacing: 0.04em;
@@ -410,7 +410,7 @@ footer {
 }
 
 .footer-links a {
-    color: #244226;
+    color: #D7D264;
 
     text-decoration: none;
 
@@ -420,7 +420,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #244226;
+    color: #D7D264;
 }
 
 
