@@ -6,10 +6,10 @@
     --accent: #c19a73;
 }
 
-/* jost uniquifier */
+/* montserrat */
 
-.jost-<uniquifier> {
-  font-family: "Jost", sans-serif;
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
