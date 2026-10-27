@@ -6,6 +6,15 @@
     --accent: #c19a73;
 }
 
+/* jost uniquifier */
+
+.jost-<uniquifier> {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 /* =========================
    LILITA ONE FONT
    ========================= */
@@ -54,7 +63,7 @@ body {
     background: var(--bg);
     color: var(--text);
 
-    font-family: "Concert One", Arial, Helvetica, sans-serif;
+    font-family: "Jost", Arial, Helvetica, sans-serif;
     text-align: center;
 
     overflow-x: hidden;
