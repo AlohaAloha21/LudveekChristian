@@ -76,7 +76,7 @@ body {
    ========================= */
 
 body:has(.home) {
-    background: url("../images/background-upload.jpg") center center / cover fixed no-repeat;
+    background: url("..videos/Smaller file 2.mp4") center center / cover fixed no-repeat;
 }
 
 .home {
