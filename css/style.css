@@ -86,16 +86,12 @@ body:has(.home) {
     flex: 1;
     width: 100%;
     min-height: 110vh;
-
     position: relative;
     overflow: hidden;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding: 70px 20px 40px;
-
     background: transparent;
 }
 
@@ -103,7 +99,6 @@ body:has(.home) {
 
 .home-video {
     position: absolute;
-
     top: 0;
     left: 0;
 
@@ -113,16 +108,18 @@ body:has(.home) {
     object-fit: cover;
 
     z-index: 0;
+    display: block;
+    opacity: 1;
 }
 
 /* HOMEPAGE TEXT ABOVE VIDEO */
+
 
 .home h1,
 .home-links {
     position: relative;
     z-index: 1;
 }
-
 .home h1 {
     width: 100%;
 
