@@ -225,9 +225,33 @@ body:has(.filmography) {
 
     padding: 140px 30px 100px;
 
-    background: #303030;
+    background: transparent;
+
+    position: relative;
+    z-index: 1;
 }
 
+/* PHOTOGRAPHY VIDEO BACKGROUND */
+
+.subpage-video {
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    width: 100vw;
+    height: 56.25vw;
+
+    min-width: 177.78vh;
+    min-height: 100vh;
+
+    transform: translate(-50%, -50%);
+
+    border: none;
+    pointer-events: none;
+
+    z-index: 0;
+}
 
 /* =========================
    CHRISTIAN L. HOUCH LINK
