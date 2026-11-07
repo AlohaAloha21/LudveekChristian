@@ -231,26 +231,20 @@ body:has(.filmography) {
     z-index: 1;
 }
 
-/* PHOTOGRAPHY VIDEO BACKGROUND */
+/* =========================
+   PHOTOGRAPHY BACKGROUND IMAGE
+   ========================= */
 
-.subpage-video {
-    position: fixed;
+body:has(.photography) {
+    background: url("..images/Back.jpg")
+        center center / cover fixed no-repeat;
+}
 
-    top: 50%;
-    left: 50%;
+/* PHOTOGRAPHY CONTENT */
 
-    width: 100vw;
-    height: 56.25vw;
-
-    min-width: 177.78vh;
-    min-height: 100vh;
-
-    transform: translate(-50%, -50%);
-
-    border: none;
-    pointer-events: none;
-
-    z-index: 0;
+.photography {
+    position: relative;
+    z-index: 1;
 }
 
 /* =========================
