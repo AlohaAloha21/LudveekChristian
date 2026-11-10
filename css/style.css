@@ -236,8 +236,7 @@ body:has(.filmography) {
    ========================= */
 
 body:has(.photography) {
-    background: url("..images/Back.jpg")
-        center center / cover fixed no-repeat;
+    background: url("..images/Back.jpg");
 }
 
 /* PHOTOGRAPHY CONTENT */
