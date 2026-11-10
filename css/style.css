@@ -236,7 +236,12 @@ body:has(.filmography) {
    ========================= */
 
 body:has(.photography) {
-    background: url("..images/Back.jpg");
+    background-image: url("../images/Back.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--bg);
 }
 
 /* PHOTOGRAPHY CONTENT */
